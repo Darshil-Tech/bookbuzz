@@ -1,0 +1,80 @@
+.circle1,
+.circle2 {
+  box-shadow: 0 15px 36px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+}
+.circle1 {
+  animation-name: circle1;
+  animation-duration: 15s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes circle1 {
+  0% {
+    top: 38vh;
+    left: 8vw;
+  }
+  50% {
+    top: 30vh;
+    left: 5vw;
+  }
+  100% {
+    top: 38vh;
+    left: 7vw;
+  }
+}
+.circle2 {
+  animation-name: circle2;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  background: linear-gradient(#f6ea41, #c2b93a);
+  opacity: 0.4;
+  height: 125px;
+  width: 125px;
+}
+@keyframes circle2 {
+  0% {
+    top: 49vh;
+    left: 45vw;
+  }
+  50% {
+    top: 30vh;
+    left: 45vw;
+  }
+  100% {
+    top: 49vh;
+    left: 45vw;
+  }
+}
+.circle4 {
+  animation-name: circle4;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  position: absolute;
+  border-radius: 50%;
+  animation-direction: alternate-reverse;
+  height: 300px;
+  width: 300px;
+  opacity: 0.2;
+  background: linear-gradient(#f00, #f0f, #3f1560);
+}
+@keyframes circle4 {
+  from {
+    top: 40vh;
+    right: 20vw;
+  }
+  to {
+    top: 30vh;
+    right: 10vw;
+  }
+}
